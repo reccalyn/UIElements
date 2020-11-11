@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+
+    <DatePicker
+        android:id="@+id/calendarView"
+        android:layout_width="339dp"
+        android:layout_height="327dp"
+        android:layout_marginTop="4dp"
+        android:headerBackground="#ffcccc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/bday"
+        android:layout_width="130dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="351dp"
+        android:text="Birthday:"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/calendarView" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="90dp"
+        android:layout_height="44dp"
+        android:layout_marginTop="9dp"
+        android:text="Sign up"
+        android:textColor="#090909"
+        android:textSize="12sp"
+        app:backgroundTint="#FFCCCC"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.884"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/phonenum" />
+
+    <Switch
+        android:id="@+id/phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="47dp"
+        android:text="With phone number"
+        android:textColorHighlight="#FFCCCC"
+        android:textColorLink="#ffcccc"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bday" />
+
+    <EditText
+        android:id="@+id/phonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:ems="10"
+        android:hint="Phone Number"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/phone" />
+</androidx.constraintlayout.widget.ConstraintLayout>

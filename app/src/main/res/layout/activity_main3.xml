@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    tools:visibility="visible">
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="421dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="4dp"
+        android:contentDescription="pic"
+        android:src="@drawable/avatar_1"
+        android:visibility="visible"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar_1"
+        tools:srcCompat="@tools:sample/avatars"
+        tools:visibility="visible"
+        tools:ignore="VectorDrawableCompat" />
+
+    <TextView
+        android:id="@+id/infos"
+        android:layout_width="150dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="4dp"
+        android:background="#ffcccc"
+        android:capitalize="none"
+        android:fontFamily="sans-serif-black"
+        android:gravity="center_horizontal"
+        android:shadowColor="#E46634AC"
+        android:text="INFORMATION:"
+        android:textAlignment="center"
+        android:textColor="#0B0B0B"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image" />
+
+    <TextView
+        android:id="@+id/fname3"
+        android:layout_width="177dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="First Name"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infos" />
+
+    <TextView
+        android:id="@+id/lname3"
+        android:layout_width="178dp"
+        android:layout_height="29dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Last Name"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.506"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/fname3" />
+
+    <TextView
+        android:id="@+id/email3"
+        android:layout_width="177dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Email"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lname3" />
+
+    <TextView
+        android:id="@+id/age3"
+        android:layout_width="175dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Age"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/email3" />
+
+    <TextView
+        android:id="@+id/bday3"
+        android:layout_width="175dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Birthday"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/age3" />
+
+    <TextView
+        android:id="@+id/phone3"
+        android:layout_width="176dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="36dp"
+        android:fontFamily="sans-serif-light"
+        android:text="Phone Number"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/bday3" />
+</androidx.constraintlayout.widget.ConstraintLayout>
